@@ -1,0 +1,61 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Set up document
+
+\documentclass{beamer}
+% For themese see https://hartwork.org/beamer-theme-matrix/
+%\usetheme{Warsaw}
+\usecolortheme{beetle}
+\setbeamersize{text margin left=5mm,text margin right=5mm}
+
+% Used to create a section slide between section
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+% Remove default navigation symbols and add just  page number
+\setbeamertemplate{navigation symbols}{} % Clear default navigation
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Title page
+
+\title{Stroke Audit Machine Learning (SAMueL)}
+\subtitle{Learnings from explainable machine learning}
+
+
+\author{Kerry Pearn\inst{1}, Michael Allen\inst{1,3}, Anna Laws\inst{1}, Richard Everson\inst{3}, Martin James\inst{1,2} }
+\institute{\inst{1}University of Exeter Medical School \inst{2}Royal Devon University Healthcare NHS Foundation Trust \inst{3}University of Exeter Institute of Data Science and Artificial Intelligence}
+
+%\institute{Overleaf}
+\date{January 2023}
+
+
+\begin{document}
+
+%\frame{\titlepage}
+
+\begin{frame}
+\titlepage
+
+
+\end{frame}
+
+\end{document}
